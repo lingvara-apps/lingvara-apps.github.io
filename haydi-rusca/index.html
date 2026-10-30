@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Haydi Rusça Gizlilik</title>
+<title>Lingvara Gizlilik</title>
 <style>
 :root{--bg:#f7f5f2;--card:#ffffff;--text:#1d1b19;--muted:#5f5a54;--accent:#c0392b;--line:#e6e1da}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141312;--card:#1e1c1b;--text:#f1ede8;--muted:#b3aca4;--accent:#ff6b5b;--line:#34302d}}
@@ -23,53 +23,89 @@ footer{color:var(--muted);font-size:.9rem;margin-top:28px}
 </head>
 <body>
 <main>
-<h1>Haydi Rusça — Gizlilik Politikası</h1>
-<p class="sub">Yürürlük tarihi: 13 Ekim 2026</p>
+<h1>Lingvara: Dil Öğrenme Destanı — Gizlilik Politikası</h1>
+<p class="sub">Yürürlük tarihi: 30 Ekim 2026 · <a href="#en">English version below</a></p>
 
 <section>
 <h2>Kısaca</h2>
-<p>Haydi Rusça (paket adı: com.davay.rusca) Türkçe konuşanlara Rusça öğreten bir mobil uygulamadır. Uygulama hesap açtırmaz; adınızı, e-postanızı veya telefon numaranızı istemez. İlerlemeniz yalnızca kendi cihazınızda saklanır.</p>
+<p>Lingvara: Dil Öğrenme Destanı (paket adı: com.davay.rusca; önceki adı Haydi Rusça) 12 dil öğreten, 15 arayüz dilinde kullanılabilen bir mobil uygulamadır. Uygulamayı hesap açmadan kullanabilirsiniz; bu durumda ilerlemeniz yalnızca kendi cihazınızda saklanır. İsterseniz Google hesabınızla giriş yaparak ilerlemenizi bulutta yedekleyebilir ve başka cihazda kaldığınız yerden devam edebilirsiniz.</p>
 </section>
 
 <section>
 <h2>Cihazınızda saklanan bilgiler</h2>
 <ul>
-<li>Tamamlanan dersler, kelime tekrar planı, seri (streak), rozetler ve günlük hedef bilgisi.</li>
+<li>Seçtiğiniz krallıklar (öğrendiğiniz diller), tamamlanan dersler, kelime tekrar planı, seri (streak), rozetler, enerji ve günlük hedef bilgisi.</li>
 <li>Sertifikada görünmesi için isteğe bağlı olarak yazdığınız ad.</li>
-<li>Satın aldığınız paketlerin önbellek kaydı.</li>
+<li>Satın aldığınız aboneliğin önbellek kaydı.</li>
+<li>İndirilen ders içerikleri, sesler ve görseller.</li>
 <li>Uygulama çökerse son hata kaydı (yalnızca siz Ayarlar'dan paylaşmayı seçerseniz gönderilir).</li>
 </ul>
-<p>Bu bilgiler bize ya da başka bir sunucuya gönderilmez. Uygulamayı silince bu veriler de silinir.</p>
+<p>Google ile giriş yapmadıysanız ilerleme bilgileriniz bize ya da başka bir sunucuya gönderilmez. Uygulamayı silince bu veriler de silinir.</p>
 </section>
 
 <section>
-<h2>Reklamlar (Google AdMob)</h2>
-<p>Ücretsiz bölümlerde reklam gösterilir. Reklamlar Google AdMob tarafından sunulur. AdMob; reklam kimliği (Advertising ID), IP adresi, cihaz modeli ve reklam etkileşimleri gibi bilgileri reklam göstermek, ölçmek ve kötüye kullanımı önlemek için toplayabilir. Bu işleme Google'ın kendi politikaları uygulanır:</p>
+<h2>Ders içeriklerinin indirilmesi</h2>
+<p>Uygulamayı küçük tutmak için ders içerikleri, sesler ve krallık görselleri ihtiyaç duyuldukça internetten indirilir (Cloudflare R2 ve GitHub sunucuları). Bu indirmelerde kişisel bilgi gönderilmez; sunucular, her internet isteğinde olduğu gibi, IP adresinizi teknik olarak görebilir ve kısa süreli güvenlik kayıtları tutabilir.</p>
+</section>
+
+<section>
+<h2>Google ile giriş ve bulut yedeği (isteğe bağlı)</h2>
+<p>Ayarlar'dan "Google ile giriş yap" seçeneğini kullanırsanız Google hesabınızın adı, e-posta adresi ve kullanıcı kimliği Google Firebase Authentication ile işlenir. Uygulamadaki ilerlemeniz (tamamlanan dersler, kelime tekrar planı, seri, rozetler ve ayarlar) Google Firebase Cloud Firestore'da, yalnızca sizin erişebileceğiniz bir kayıtta saklanır. Bu veriler yalnızca ilerlemenizi yedeklemek ve başka cihazda geri yüklemek için kullanılır; satılmaz ve reklam için kullanılmaz. Abonelik hakkınız bulut yedeğinden değil, her zaman Google Play'den doğrulanır.</p>
+<ul>
+<li><a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase gizlilik ve güvenlik</a></li>
+</ul>
+</section>
+
+<section id="hesap-silme">
+<h2>Hesap ve veri silme</h2>
+<p>Lingvara hesabınızı ve buluttaki yedeğinizi istediğiniz zaman kalıcı olarak silebilirsiniz:</p>
+<ul>
+<li><strong>Uygulamadan:</strong> Ayarlar › İlerlemeni koru › "Hesabı sil". Hesabınız (Firebase Authentication kaydı) ve buluttaki tüm ilerleme verileriniz hemen silinir.</li>
+<li><strong>Uygulama olmadan:</strong> Giriş yaptığınız Google e-posta adresinden <a href="mailto:lingvara.apps@gmail.com?subject=Hesap%20silme">lingvara.apps@gmail.com</a> adresine "Hesap silme" konulu bir e-posta gönderin. Hesabınız ve tüm verileriniz en geç 30 gün içinde silinir.</li>
+</ul>
+<p>Silinen veriler: ad, e-posta adresi, kullanıcı kimliği ve buluttaki ilerleme yedeği. Saklanan veri yoktur; yalnızca Google'ın kendi hizmetlerinin (Analytics, AdMob, Play) kendi saklama süreleri geçerlidir. Silme işlemi geri alınamaz. Cihazınızdaki ilerleme, uygulamayı veya uygulama verilerini silene kadar cihazınızda kalır.</p>
+</section>
+
+<section>
+<h2>Kullanım istatistikleri (Google Analytics for Firebase)</h2>
+<p>Uygulamayı geliştirmek için hangi ekranların kullanıldığı, tamamlanan dersler, deneme ve satın alma olayları gibi anonim kullanım istatistikleri Google Analytics for Firebase ile toplanır. Bu bilgiler bir uygulama örneği kimliğiyle ilişkilendirilir; adınız veya e-postanız bu istatistiklere eklenmez. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de bu işleme, aşağıdaki izin penceresinde verdiğiniz tercihe göre yapılır.</p>
+</section>
+
+<section>
+<h2>İnternet ve saat doğrulaması</h2>
+<p>Ücretsiz kullanımda uygulama internet bağlantısı gerektirir. Günlük enerji ve ödüllerin doğru hesaplanması için uygulama açıldığında Google veya Yandex sunucusuna kısa bir istek gönderip yalnızca güncel tarihi okur; bu istekte kişisel bilgi gönderilmez.</p>
+</section>
+
+<section>
+<h2>Reklamlar (Google AdMob) ve izin</h2>
+<p>Ücretsiz bölümlerde reklam gösterilir. Reklamlar Google AdMob tarafından sunulur. AdMob; reklam kimliği (Advertising ID), yaklaşık konum (IP adresinden), cihaz modeli ve reklam etkileşimleri gibi bilgileri reklam göstermek, ölçmek ve kötüye kullanımı önlemek için toplayabilir.</p>
+<p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki kullanıcılardan, Google'ın sertifikalı izin yönetim platformu (UMP) aracılığıyla izin istenir; "İzin verme" seçeneği de sunulur. Tercihinizi istediğiniz zaman Ayarlar sayfasının altındaki "Reklam tercihleri" bağlantısından değiştirebilirsiniz. İzin vermezseniz kişiselleştirilmemiş ya da sınırlı reklam gösterilir.</p>
 <ul>
 <li><a href="https://policies.google.com/privacy" rel="noopener">Google Gizlilik Politikası</a></li>
 <li><a href="https://policies.google.com/technologies/ads" rel="noopener">Google reklamlarda verileri nasıl kullanır</a></li>
 </ul>
-<p>Kişiselleştirilmiş reklamları cihazınızın ayarlarından (Google › Reklamlar) kapatabilir veya reklam kimliğinizi sıfırlayabilirsiniz. iOS'ta uygulama sizden izleme izni ister; izin vermezseniz kişiselleştirilmemiş reklam gösterilir. Abone olan kullanıcılara reklam gösterilmez.</p>
+<p>Kişiselleştirilmiş reklamları cihazınızın ayarlarından (Google › Reklamlar) kapatabilir veya reklam kimliğinizi sıfırlayabilirsiniz. iOS'ta uygulama sizden izleme izni ister. Abone olan kullanıcılara reklam gösterilmez.</p>
 </section>
 
 <section>
 <h2>Satın almalar</h2>
-<p>Abonelikler ve ömür boyu paket Google Play (iOS'ta App Store) üzerinden satın alınır. Ödeme bilgilerinizi biz görmeyiz; işlemi Google veya Apple yürütür. Uygulama yalnızca hangi paketin satın alındığını doğrulamak için mağazadan satın alma kaydını okur. Aboneliğinizi mağazanın abonelik ayarlarından istediğiniz zaman iptal edebilirsiniz.</p>
+<p>Lingvara Pro abonelikleri Google Play (iOS'ta App Store) üzerinden satın alınır. Ödeme bilgilerinizi biz görmeyiz; işlemi Google veya Apple yürütür. Uygulama yalnızca hangi aboneliğin etkin olduğunu doğrulamak için mağazadan satın alma kaydını okur. Aboneliğinizi mağazanın abonelik ayarlarından istediğiniz zaman iptal edebilirsiniz.</p>
 </section>
 
 <section>
-<h2>Sesli okuma</h2>
-<p>Rusça kelimeler cihazınızın metin okuma (TTS) motoruyla seslendirilir. Okunan metin cihazınızdaki TTS hizmetine iletilir; uygulama mikrofon kullanmaz ve ses kaydı almaz.</p>
+<h2>Sesli okuma ve mikrofon</h2>
+<p>Öğrendiğiniz dildeki kelimeler kayıtlı seslerle ya da cihazınızın metin okuma (TTS) motoruyla seslendirilir.</p>
+<p><strong>Konuşma pratiği:</strong> Kuledeki konuşma katlarında, söylediğiniz kelimenin doğru olup olmadığını anlamak için mikrofon kullanılır; izin yalnızca bu katlarda istenir. Konuşmanız cihazınızın ses tanıma hizmetine (genellikle Google) iletilir ve yazıya çevrilir. Uygulama ses kaydını saklamaz ve bize göndermez. Mikrofon iznini istediğiniz zaman telefon ayarlarından kapatabilirsiniz; bu durumda "dinle ve tekrar et" modu kullanılır.</p>
 </section>
 
 <section>
 <h2>Çocuklar</h2>
-<p>Uygulama genel kitleye yöneliktir ve 13 yaş altındaki çocuklardan bilerek kişisel veri toplamaz.</p>
+<p>Uygulama 13 yaş ve üzeri genel kitleye yöneliktir ve 13 yaş altındaki çocuklardan bilerek kişisel veri toplamaz.</p>
 </section>
 
 <section>
 <h2>Haklarınız ve değişiklikler</h2>
-<p>Cihazınızdaki verileri uygulamayı silerek veya uygulama verilerini temizleyerek tamamen silebilirsiniz. Bu politika değişirse bu sayfa güncellenir ve yürürlük tarihi değiştirilir.</p>
+<p>Verilerinize erişme, düzeltme ve silme haklarınızı kullanmak için bize yazabilirsiniz. Cihazınızdaki verileri uygulamayı silerek veya uygulama verilerini temizleyerek tamamen silebilirsiniz. Buluttaki verileriniz için yukarıdaki "Hesap ve veri silme" bölümüne bakın. Bu politika değişirse bu sayfa güncellenir ve yürürlük tarihi değiştirilir.</p>
 </section>
 
 <section>
@@ -77,7 +113,42 @@ footer{color:var(--muted);font-size:.9rem;margin-top:28px}
 <p>Sorularınız için bize <a href="mailto:lingvara.apps@gmail.com">lingvara.apps@gmail.com</a> adresinden ulaşabilirsiniz.</p>
 </section>
 
-<footer>© 2026 Lingvara · <a href="../">Tüm uygulamalar</a></footer>
+<h1 id="en" style="margin-top:40px">Lingvara: Language Learning Epic — Privacy Policy</h1>
+<p class="sub">Effective date: 30 October 2026</p>
+
+<section>
+<h2>Summary</h2>
+<p>Lingvara: Language Learning Epic (package name com.davay.rusca; formerly Haydi Rusça) is a mobile app that teaches 12 languages in 15 interface languages. You can use it without an account; your progress then stays only on your device. Optionally, you can sign in with Google to back up your progress and continue on another device.</p>
+</section>
+
+<section>
+<h2>What we process</h2>
+<ul>
+<li><strong>On your device:</strong> chosen kingdoms (languages), completed lessons, review schedule, streak, badges, energy, settings, an optional name for certificates, a cache of your subscription, and downloaded lessons, audio and images.</li>
+<li><strong>Content downloads:</strong> lessons, audio and images are downloaded on demand from Cloudflare R2 and GitHub. No personal data is sent; the servers technically see your IP address, as with any internet request.</li>
+<li><strong>Google sign-in (optional):</strong> your Google name, email address and user ID are processed by Firebase Authentication; your progress backup is stored in Cloud Firestore in a record only you can access. It is never sold or used for ads. Your subscription is always verified with Google Play, not from the backup.</li>
+<li><strong>Analytics:</strong> anonymous usage events (screens, lessons, trial and purchase events) via Google Analytics for Firebase, linked to an app-instance ID, not to your name or email.</li>
+<li><strong>Ads:</strong> Google AdMob may collect the advertising ID, approximate location (from IP), device model and ad interactions to serve and measure ads and prevent fraud. In the EEA, UK and Switzerland consent is requested via Google's certified consent platform (UMP), including a "Do not consent" option; you can change it anytime via the "Ad preferences" link at the bottom of Settings. Subscribers see no ads.</li>
+<li><strong>Purchases:</strong> Lingvara Pro subscriptions are handled by Google Play / App Store; we never see your payment details.</li>
+<li><strong>Microphone:</strong> used only on speaking floors for speech recognition by your device's service; recordings are not stored or sent to us.</li>
+</ul>
+</section>
+
+<section id="account-deletion">
+<h2>Account and data deletion</h2>
+<ul>
+<li><strong>In the app:</strong> Settings › Protect your progress › "Delete account". Your account (Firebase Authentication record) and all cloud progress data are deleted immediately.</li>
+<li><strong>Without the app:</strong> email <a href="mailto:lingvara.apps@gmail.com?subject=Account%20deletion">lingvara.apps@gmail.com</a> from the Google address you signed in with, subject "Account deletion". Your account and all data are deleted within 30 days.</li>
+</ul>
+<p>Deleted: name, email address, user ID and the cloud progress backup. Nothing else is retained by us; Google's own services (Analytics, AdMob, Play) keep data under their own retention periods. Deletion cannot be undone.</p>
+</section>
+
+<section>
+<h2>Children, changes and contact</h2>
+<p>The app is intended for a general audience aged 13+ and does not knowingly collect personal data from children under 13. If this policy changes, this page and its effective date are updated. Contact: <a href="mailto:lingvara.apps@gmail.com">lingvara.apps@gmail.com</a>.</p>
+</section>
+
+<footer>© 2026 Lingvara · <a href="../">Tüm uygulamalar / All apps</a></footer>
 </main>
 </body>
 </html>
